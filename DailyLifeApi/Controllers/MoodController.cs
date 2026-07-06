@@ -40,7 +40,7 @@ public class MoodController : ControllerBase
         return Ok(data);
     }
 
-    [HttpDelete("{id}")]
+    [HttpDelete("{id}")] // burası yorumms
     public IActionResult Delete(int id)
     {
         var data = _context.Moods.Find(id);
